@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Table</title>
+    <nav class="navbar navbar-expand-lg navbar-light " style= "background-color: #e3f2fd;">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="userinfo.html">User Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="table.html" >Book Table</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+  </head>
+  <body>
+
+    <h1>Book Information</h1>
+    <a href="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg">
+        <img src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg" class="img">
+
+     </a>
+     <p> Picture found on <a href= "https://cdn.elearningindustry.com/">cdn.elearningindustry.com </p></a>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">title</th>
+          <th scope="col">author(s)</th>
+          <th scope="col">year published</th>
+          <th scope="col">publisher</th>
+          <th scope="col">page count</th>
+          <th scope="col">MSRP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Lightning Thief</th>
+          <td>Rick Riordan</td>
+          <td>1998</td>
+          <td>Penguin Random House</td>
+          <td>520</td>
+          <td>$19.99</td>
+        </tr>
+        <tr>
+          <th scope="row">Battle of Labryinth</th>
+          <td>Rick Riordan</td>
+          <td>2004</td>
+          <td>Hachette Livre</td>
+          <td>255</td>
+          <td>$14.99</td>
+        </tr>
+        <tr>
+          <th scope="row">To Kill a Mockingbird</th>
+          <td>Harper Lee</td>
+          <td>1960</td>
+          <td>Johnny Apple</td>
+          <td>340</td>
+          <td>$9.99</td>
+        </tr>
+        <tr>
+          <th scope="row">Pride and Prejudice</th>
+          <td>Jane Austen</td>
+          <td>1850</td>
+          <td>Thomas Egerton</td>
+          <td>729</td>
+          <td>$24.99</td>
+        </tr>
+        <tr>
+          <th scope="row">The Cather in the Rye</th>
+          <td>J.d. Salinger</td>
+          <td>1951</td>
+          <td>Little, Brown and Company</td>
+          <td>1002</td>
+          <td>$12.45</td>
+        </tr>
+        <tr>
+          <th scope="row">Chamber of Secrets</th>
+          <td>J.K Rowling</td>
+          <td>1998</td>
+          <td>Scholastic Inc.</td>
+          <td>1129</td>
+          <td>$34.99</td>
+        </tr>
+      </tbody>
+    </table>
+    <form>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault01">title</label>
+      <input type="text" class="form-control" id="validationDefault01" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault02">author(s)</label>
+      <input type="text" class="form-control" id="validationDefault02" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">year published</label>
+      <input type="text" class="form-control" id="validationDefault03" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">publisher</label>
+      <input type="text" class="form-control" id="validationDefault05" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">page count</label>
+      <input type="text" class="form-control" id="validationDefault05" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">MSRP</label>
+      <input type="text" class="form-control" id="validationDefault05" required>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Add to table</button>
+</form>
+  </body>
+</html>
