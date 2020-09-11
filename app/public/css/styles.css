@@ -1,0 +1,33 @@
+html,
+body {
+  background-color: lightblue;
+  color rgb(0,20,120);
+  color:white;
+
+
+}
+head {
+  color:pink;
+}
+a:link {
+  color: red;
+}
+
+.border {
+  border-style: dotted;
+  border-color: lightblue;
+}
+
+.backgroundNav{
+  background-color: lightblue;
+  background-blend-mode: color-burn;
+}
+
+#align{
+  text-align:center;
+}
+.img {
+  border-radius: 50%;
+  width: 200px;
+  height:200px;
+}
