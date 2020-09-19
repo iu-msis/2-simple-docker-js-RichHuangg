@@ -32,6 +32,11 @@ a:link {
   height:200px;
 }
 
+.special{
+font-family: cursive;
+font-color:pink;
+}
+
 /** tablesort css **/
 th[role=columnheader]:not(.no-sort) {
 	cursor: pointer;
