@@ -3,7 +3,10 @@ var app = new Vue({
   data: {
     userName: 'l',
     country: "test",
-    birthdate: "test",
+    y: "test",
+    m: "test",
+    d: "test",
+    birthdate:"test",
     userEmail: "test",
     profPicture: "test",
     largeImage: "",
@@ -27,7 +30,11 @@ var app = new Vue({
         console.log(userData);
         this.userName = userData.name.first + " " + userData.name.last;
         this.country = userData.location.country;
-        this.birthdate = userData.dob.date;
+
+        this.y = userData.dob.date.split('-')[0];
+        this.m = userData.dob.date.split('-')[1];
+        this.d = userData.dob.date.split('-')[2].substring(0,2);
+        this.birthdate = userData.dob.date
         this.userEmail = userData.email;
         this.profPicture = userData.picture;
         this.largeImage = userData.picture.large;
@@ -37,8 +44,8 @@ var app = new Vue({
 
     },
 
-  formatDate(d){
-    return moment(d).format("MM/DD/YYYY");
-  }
+  //formatDate(d){
+  //  return moment(d).format("MM/DD/YYYY");
+  //}
 }
 })
