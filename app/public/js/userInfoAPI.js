@@ -44,8 +44,5 @@ var app = new Vue({
 
     },
 
-  //formatDate(d){
-  //  return moment(d).format("MM/DD/YYYY");
-  //}
 }
 })
