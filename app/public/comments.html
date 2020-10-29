@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:;base64,=">
+    <title>Table</title>
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="index.html">Comments</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="userinfo.html">User Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="table.html" >Book Table</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="comments.html" >Comments</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <h1>Create Comments</h1>
+
+<div id="commentPage">
+    <form v-on:submit.prevent="createComments()" id="newCommentForm" >
+  <div class="comments">
+      <label for="commentText">Make a Comment!</label>
+      <input type="text" v-model="newComment.commentText" class="form-control" id="commentText" required>
+    </div>
+  <br/>
+    <button class="btn btn-primary" type="submit" value="Make Comment"id="submitNewComment">Make Comment</button>
+    <div class="container-fluid" id="commentPage">
+            <!--div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">-->
+                        <!-- <button v-on:click="yell()">Click Me!</button> -->
+                  <table id="commentTable" class="table table-bordered table-striped table-hover table-condensed">
+
+                      <thead>
+                        <tr>
+                            <th class="headerSortDown"> Comment Text</th>
+
+                        </tr>
+                      </thead>
+
+                      <tbody id="commentTableBody">
+                        <tr class="comments" v-for="comment in comments">
+                            <td><span id="commentText" class="commentText">{{comment.id}}</span></td>
+                            <td><span class="commentText">{{comment.commentText}}</span></td>
+
+                        </tr>
+                      </tbody>
+                  </table>
+
+              </div>
+</form>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/comments.js"></script>
+  </body>
+</html>
